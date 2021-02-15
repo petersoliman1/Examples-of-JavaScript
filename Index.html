@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Icon-->
+    <link rel="icon" href="Img/avatar.svg">
+    <!--Library fontawesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Font Google-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <!--my style-->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!--Start Login Form-->
+    <img class="wave" src="Img/wave.png">
+	<section class="container">
+		<div class="img">
+			<img src="Img/bg.svg">
+		</div>
+		<div class="login-content">
+			<form id="myform" action="Home.html" onsubmit="return validata();">
+				<img src="Img/avatar.svg">
+				<h2 class="title">Welcome</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Username</h5>
+                        <input type="text" class="input" placeholder="Enter Your Name, first name and second name." id="name">
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-at"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email</h5>
+                        <input type="email" class="input" placeholder="Example: email@example.com" id="email">
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Phone Number</h5>
+                        <input type="text" class="input" placeholder="Example: 01234567891" id="phone">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i"> 
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Password</h5>
+                    <input type="password" class="input" placeholder="Use 8 or more characters with a mix of letters, numbers & symbols.
+                        " id="password">
+                    </div>
+                </div>
+                <a href="#">Forgot Password?</a>
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </section>
+    <!--The End Login Form-->
+
+    <!--my main-->
+    <script src="JS/main.js"></script>
+</body>
+</html>

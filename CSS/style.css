@@ -1,0 +1,297 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Start Login Form*/
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+    width: 50%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding: 22px 0px;
+}
+
+.img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login-content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.img img{
+	width: 500px;
+}
+
+form{
+	width: 455px;
+}
+
+.login-content img{
+    height: 100px;
+}
+
+.login-content h2{
+	color: #3ae2a7;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
+.i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 28%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #38d39f;
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus > .i > i{
+	color: #38d39f;
+}
+
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 9px 11px;
+    font-size: 19px;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+	margin-bottom: 4px;
+}
+
+::placeholder {
+	color: #3ae2a7bb;
+	font-size: 12px;
+}
+
+a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+a:hover{
+	color: #38d39f;
+}
+
+.btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn:hover{
+	background-position: right;
+}
+/*End Login Form*/
+
+/*Start Background And Welcome*/
+.name{
+    font-size: 105px;
+    color: white;
+    text-align: center;
+    padding-top: 234px;
+    text-shadow: 12px 3px 7px #000000;
+    height: 485px;
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*The End Background And Welcome*/
+
+/*Start Arithmetic transactions and Arithmetic Mean*/
+.Arithmetic{
+    width: 100%;
+	background:
+	linear-gradient(
+		rgba(26, 28, 29, 0.49),
+		rgba(26, 28, 29, 0.49)
+		), 
+	url('../Img/sec2.jpg');
+	background-size: cover;
+	padding: 20px 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    text-align: center;
+}
+
+.Arithmetic h1{
+    text-align: center;
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+}
+
+.Arithmetic h2{
+	margin-left: 10px;
+    display: inline-flex;
+    color: wheat;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+}
+
+.Arithmetic p{
+    display: inline-block;
+    color: #2ac58f;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+    font-weight: bold;
+    font-size: 48px;
+    padding: 10px;
+}
+/*End Arithmetic transactions and Arithmetic Mean*/
+
+/*Start CV and personal information*/
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 121px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.personal{
+    margin: 20px;
+    text-align: center;
+}
+
+.personal h2{
+    color: crimson;
+	margin-top: 18px;
+}
+
+.personal h2 span{
+    color: blue;
+}
+/*End CV and personal information*/
+
+/*Start Array*/
+.array{
+	font-size: 20px;
+	margin-top: 57px;
+	margin-left: 20px;
+}
+
+.array h2{
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+}
+
+.array p{
+	margin-bottom: 5px;
+	font-size: 25px;
+	color: #555;
+}
+
+.array .p2{
+	color: black;
+}
+/*End Array*/
